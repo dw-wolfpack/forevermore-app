@@ -1,0 +1,104 @@
+[
+  {
+    "key": "mystic_mage",
+    "title": "Mystic Mage",
+    "desc": "Pet imagined as a wizard while casting a spell",
+    "icon": "✨",
+    "badge": "New",
+    "prompt": "Pet imagined as a wizard while casting a spell, sparkling magic, arcane glow, fantasy lighting"
+  },
+  {
+    "key": "pixel_pup",
+    "title": "Pixel Pup",
+    "desc": "8-bit pet jumping through a retro game",
+    "icon": "🎮",
+    "badge": "New",
+    "prompt": "8-bit pet jumping through a retro game, pixel art, limited color palette, retro CRT vibe"
+  },
+  {
+    "key": "regal_renaissance",
+    "title": "Regal Renaissance",
+    "desc": "Pet imagined as royalty on a throne",
+    "icon": "👑",
+    "badge": "Popular",
+    "prompt": "Pet imagined as royalty on a throne, renaissance oil painting, classical art style, ornate noble clothing, dramatic lighting"
+  },
+  {
+    "key": "cosmic_voyager",
+    "title": "Cosmic Voyager",
+    "desc": "Pet imagined exploring Mars in a space suit",
+    "icon": "🌌",
+    "badge": "New",
+    "prompt": "Pet imagined exploring Mars in a space suit, cosmic scene, red planet landscape, space exploration aesthetic"
+  },
+  {
+    "key": "neon_nights",
+    "title": "Neon Nights",
+    "desc": "Pet imagined in a neon-lit alley",
+    "icon": "🌆",
+    "badge": "New",
+    "prompt": "Pet imagined in a neon-lit alley, cyberpunk glow, vibrant neon signs, moody lighting, city at night"
+  },
+  {
+    "key": "chibi_vibes",
+    "title": "Chibi Vibes",
+    "desc": "Pet imagined in chibi style with big eyes and blushing cheeks",
+    "icon": "🌸",
+    "badge": "New",
+    "prompt": "Pet imagined in chibi style with big eyes and blushing cheeks, kawaii, pastel colors, cute proportions"
+  },
+  {
+    "key": "watercolor_dream",
+    "title": "Watercolor Dream",
+    "desc": "Pet imagined as a soft watercolor painting with magical hues",
+    "icon": "🎨",
+    "badge": "New",
+    "prompt": "Pet imagined as a soft watercolor painting with magical hues, soft brushstrokes, paper texture"
+  },
+  {
+    "key": "minimalist_line_art",
+    "title": "Minimalist Line Art",
+    "desc": "Elegant single-line portrait of the pet on crisp white",
+    "icon": "🖋️",
+    "badge": "New",
+    "prompt": "Elegant single-line portrait of the pet on crisp white, minimalism, clean flowing lines"
+  },
+  {
+    "key": "cottagecore",
+    "title": "Cottagecore",
+    "desc": "Soft pastel pet portrait in a meadow with wildflowers, vintage cottagecore style",
+    "icon": "🌿",
+    "badge": "New",
+    "prompt": "Soft pastel pet portrait in a meadow with wildflowers, vintage cottagecore style, dreamy natural light"
+  },
+  {
+    "key": "charcoal",
+    "title": "Charcoal Sketch",
+    "desc": "Elegant black and white artistic study",
+    "icon": "✏️",
+    "prompt": "Elegant black and white artistic study of the pet, charcoal drawing, detailed shading, fine art, paper texture"
+  },
+  {
+    "key": "golden_hour",
+    "title": "Golden Hour",
+    "desc": "Warm, glowing natural light portrait",
+    "icon": "🌅",
+    "badge": "Popular",
+    "prompt": "Pet portrait in golden hour photography, warm natural lighting, sunset glow, magical atmosphere, professional portrait"
+  },
+  {
+    "key": "sepia",
+    "title": "Vintage Sepia",
+    "desc": "Timeless sepia tone with classic appeal",
+    "icon": "📷",
+    "prompt": "Vintage sepia pet photography, aged photo effect, classic portrait, nostalgic atmosphere, antique style"
+  },
+  {
+    "key": "pop_art",
+    "title": "Pop Art",
+    "desc": "Bold colors and graphic comic book style",
+    "icon": "🎨",
+    "badge": "Popular",
+    "prompt": "Pet in pop art style, bold colors, comic book illustration, graphic design, vibrant contrast, modern art"
+  }
+]

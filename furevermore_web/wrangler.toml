@@ -1,0 +1,7 @@
+name = "furevermore-app"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".next"
+
+[env.production.vars]
+NEXT_PUBLIC_AWS_BASE_URL = "https://e0r2hs54xd.execute-api.us-west-2.amazonaws.com"
