@@ -182,8 +182,14 @@ export default function CreatePage() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
               >
-                <GlassCard className="max-w-2xl mx-auto p-12 text-center border-dashed border-2 border-brand-text/10">
-                  <div className="mb-8">
+                <GlassCard className="max-w-2xl mx-auto p-12 text-center border-dashed border-2 border-brand-text/10 relative">
+                  <div className="absolute top-4 right-4 z-10">
+                    <span className="bg-secondary text-white text-[10px] font-bold px-3 py-1 rounded-full tracking-widest uppercase shadow-lg">
+                      Studio Opens Soon
+                    </span>
+                  </div>
+                  
+                  <div className="mb-8 opacity-40">
                     <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto text-primary mb-6">
                       <Upload className="w-10 h-10" />
                     </div>
@@ -196,11 +202,11 @@ export default function CreatePage() {
                     id="pet-upload"
                     className="hidden"
                     accept="image/*"
-                    onChange={handleFileChange}
+                    disabled
                   />
                   
                   {preview ? (
-                    <div className="relative w-64 h-64 mx-auto mb-8 rounded-2xl overflow-hidden shadow-xl">
+                    <div className="relative w-64 h-64 mx-auto mb-8 rounded-2xl overflow-hidden shadow-xl opacity-40">
                       <Image src={preview} alt="Preview" fill className="object-cover" />
                       {isUploading && (
                         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
@@ -211,14 +217,13 @@ export default function CreatePage() {
                   ) : null}
 
                   <div className="flex flex-col items-center gap-4">
-                    <Button onClick={() => document.getElementById('pet-upload')?.click()}>
-                      {isUploading ? "Uploading..." : file ? "Change Photo" : "Select Photo"}
+                    <Button disabled className="cursor-not-allowed opacity-60 grayscale bg-gray-400">
+                      Studio Opening Soon
                     </Button>
-                    {getUrl && !isUploading && (
-                      <Button variant="outline" onClick={() => setStep("STYLE")}>
-                        Continue to Styles →
-                      </Button>
-                    )}
+                    <p className="text-sm text-brand-muted font-medium mt-2">
+                       We're fine-tuning the AI artisan to ensure every portrait is a masterpiece. 
+                       <br />Check back in a few hours!
+                    </p>
                   </div>
                 </GlassCard>
               </motion.div>
