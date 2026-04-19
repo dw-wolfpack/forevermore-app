@@ -1,4 +1,4 @@
-name = "furevermore-app"
+name = "forevermore-app"
 compatibility_date = "2024-11-01"
 compatibility_flags = ["nodejs_compat"]
 main = ".vercel/output/static/_worker.js/index.js"
