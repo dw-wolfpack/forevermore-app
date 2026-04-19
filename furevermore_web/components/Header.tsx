@@ -87,56 +87,37 @@ export const Header = () => {
         </button>
       </div>
 
-      {/* Mobile Sidebar */}
+      {/* Mobile Dropdown Menu */}
       <AnimatePresence>
         {isMenuOpen && (
-          <>
-            {/* Backdrop */}
-            <motion.div 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setIsMenuOpen(false)}
-              className="fixed inset-0 bg-secondary/20 backdrop-blur-sm z-40 md:hidden"
-            />
-            
-            {/* Sidebar */}
-            <motion.div 
-              initial={{ x: "100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: "100%" }}
-              transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className="fixed top-0 right-0 bottom-0 w-full max-w-[300px] bg-brand-bg z-[101] p-8 shadow-[0_0_50px_rgba(0,0,0,0.3)] md:hidden border-l border-brand-text/5"
-            >
-              <div className="flex flex-col h-full">
-                <div className="flex items-center justify-between mb-12">
-                  <span className="text-xl font-serif font-bold text-secondary">Menu</span>
-                  <button onClick={() => setIsMenuOpen(false)}>
-                    <X className="w-6 h-6 text-brand-muted" />
-                  </button>
-                </div>
+          <motion.div 
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="md:hidden bg-brand-bg border-b border-brand-text/5 overflow-hidden absolute top-20 left-0 right-0 z-40 shadow-xl"
+          >
+            <div className="container mx-auto px-8 py-10 flex flex-col gap-8">
+              <nav className="flex flex-col gap-6 text-xl">
+                <NavLink href="/create" active={pathname.startsWith("/create")}>Create Art</NavLink>
+                <NavLink href="/gallery" active={pathname === "/gallery"}>Gallery</NavLink>
+                <NavLink href="/shop" active={pathname === "/shop"}>Shop</NavLink>
+                <NavLink href="/about" active={pathname === "/about"}>About</NavLink>
+              </nav>
 
-                <nav className="flex flex-col gap-6 text-lg">
-                  <NavLink href="/create" active={pathname.startsWith("/create")}>Create Art</NavLink>
-                  <NavLink href="/gallery" active={pathname === "/gallery"}>Gallery</NavLink>
-                  <NavLink href="/shop" active={pathname === "/shop"}>Shop</NavLink>
-                  <NavLink href="/about" active={pathname === "/about"}>About</NavLink>
-                </nav>
-
-                <div className="mt-auto pt-8">
-                  <Link href="/create" onClick={() => setIsMenuOpen(false)}>
-                    <Button className="w-full justify-between group">
-                      <span>Start Creating</span>
-                      <Sparkles className="w-4 h-4 group-hover:scale-125 transition-transform" />
-                    </Button>
-                  </Link>
-                  <p className="text-xs text-brand-muted text-center mt-6 italic">
-                    Museum quality for your best friend.
-                  </p>
-                </div>
+              <div className="pt-6 border-t border-brand-text/5">
+                <Link href="/create" onClick={() => setIsMenuOpen(false)}>
+                  <Button className="w-full justify-between group py-6">
+                    <span className="text-lg">Start Creating</span>
+                    <Sparkles className="w-5 h-5 group-hover:scale-125 transition-transform" />
+                  </Button>
+                </Link>
+                <p className="text-sm text-brand-muted text-center mt-8 italic">
+                  Museum quality for your best friend.
+                </p>
               </div>
-            </motion.div>
-          </>
+            </div>
+          </motion.div>
         )}
       </AnimatePresence>
     </header>
