@@ -40,6 +40,7 @@ export const Header = () => {
         <nav className="hidden md:flex items-center gap-8">
           <NavLink href="/create" active={pathname.startsWith("/create")}>Create Art</NavLink>
           <NavLink href="/gallery" active={pathname === "/gallery"}>Gallery</NavLink>
+          <NavLink href="/shop" active={pathname === "/shop"}>Shop</NavLink>
           <NavLink href="/about" active={pathname === "/about"}>About</NavLink>
           <Link href="/create">
             <Button size="sm">Start Creating</Button>
