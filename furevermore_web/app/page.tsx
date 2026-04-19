@@ -70,13 +70,13 @@ export default function Home() {
                   priority
                 />
               </GlassCard>
-              <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-3 -rotate-3 animate-bounce-slow">
-                <div className="w-10 h-10 bg-success/20 rounded-full flex items-center justify-center text-success">
+              <div className="absolute -bottom-6 -left-6 bg-brand-bg p-4 rounded-2xl shadow-xl flex items-center gap-3 -rotate-3 animate-bounce-slow border border-brand-text/5 transition-colors">
+                <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center text-primary">
                   <Heart className="w-6 h-6 fill-current" />
                 </div>
                 <div>
                   <p className="text-xs text-brand-muted">Art Quality</p>
-                  <p className="text-sm font-bold">100% Guaranteed</p>
+                  <p className="text-sm font-bold text-secondary">100% Guaranteed</p>
                 </div>
               </div>
             </div>

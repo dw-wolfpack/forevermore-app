@@ -106,7 +106,7 @@ export const Header = () => {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className="fixed top-0 right-0 bottom-0 w-[280px] bg-brand-bg border-l border-brand-text/5 z-50 p-8 shadow-2xl md:hidden"
+              className="fixed top-0 right-0 bottom-0 w-[280px] bg-brand-bg z-[100] p-8 shadow-2xl md:hidden border-l border-brand-text/5"
             >
               <div className="flex flex-col h-full">
                 <div className="flex items-center justify-between mb-12">
