@@ -20,6 +20,7 @@ const nextConfig: NextConfig = {
         hostname: 'success.stripe.com',
       }
     ],
+    unoptimized: true,
   },
 };
 
