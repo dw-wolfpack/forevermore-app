@@ -49,15 +49,15 @@ export const NewsletterForm = ({
 
   if (subscribed) {
     return (
-      <div className={`py-4 animate-in fade-in zoom-in duration-500 ${centered ? 'text-center' : ''}`}>
-        <div className={`w-16 h-16 bg-success/10 rounded-full flex items-center justify-center mb-6 text-success ${centered ? 'mx-auto' : ''}`}>
-          <CheckCircle2 className="w-8 h-8" />
+        <div className={`py-4 animate-in fade-in zoom-in duration-500 ${centered ? 'text-center' : ''}`}>
+          <div className={`w-16 h-16 bg-success/10 rounded-full flex items-center justify-center mb-6 text-success ${centered ? 'mx-auto' : ''}`}>
+            <CheckCircle2 className="w-10 h-10" />
+          </div>
+          <h3 className="text-2xl font-serif font-bold text-secondary mb-2">Welcome to the Pack!</h3>
+          <p className="text-brand-muted">
+            We've added your name to the list.
+          </p>
         </div>
-        <h3 className="text-2xl font-serif font-bold text-secondary mb-2 text-brand-bg">Welcome to the Pack!</h3>
-        <p className="text-brand-muted text-brand-bg/70">
-          We've added your name to the list.
-        </p>
-      </div>
     );
   }
 

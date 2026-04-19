@@ -85,7 +85,7 @@ export default function Home() {
       </section>
 
       {/* Social Proof Marks */}
-      <section className="py-12 bg-white/50 border-y border-brand-text/5">
+      <section className="py-12 bg-brand-chip/30 border-y border-brand-text/5">
         <div className="container mx-auto px-6">
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-20 opacity-40 grayscale">
              {/* Mock brand logos would go here */}
@@ -124,7 +124,7 @@ export default function Home() {
               }
             ].map((step, i) => (
               <div key={i} className="text-center group">
-                <div className="w-20 h-20 bg-white rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-sm group-hover:bg-primary group-hover:text-white transition-all duration-300 group-hover:scale-110">
+                <div className="w-20 h-20 bg-brand-chip rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-sm group-hover:bg-primary group-hover:text-white transition-all duration-300 group-hover:scale-110">
                   {step.icon}
                 </div>
                 <h3 className="text-2xl font-serif font-bold text-secondary mb-4">{step.title}</h3>
