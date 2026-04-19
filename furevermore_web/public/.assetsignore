@@ -1,0 +1,2 @@
+# This file is intentionally empty to tell Cloudflare Wrangler 
+# that it is safe to upload the _worker.js directory produced by next-on-pages.
