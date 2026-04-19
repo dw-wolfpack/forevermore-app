@@ -17,6 +17,8 @@ const FREE_LIMIT = 2;
 
 type Step = "UPLOAD" | "STYLE" | "LOADING" | "RESULT" | "LIMIT";
 
+import { NewsletterForm } from "@/components/NewsletterForm";
+
 export default function CreatePage() {
   const [step, setStep] = useState<Step>("UPLOAD");
   const [file, setFile] = useState<File | null>(null);
@@ -217,10 +219,8 @@ export default function CreatePage() {
                   ) : null}
 
                   <div className="flex flex-col items-center gap-4">
-                    <Button disabled className="cursor-not-allowed opacity-60 grayscale bg-gray-400">
-                      Studio Opening Soon
-                    </Button>
-                    <p className="text-sm text-brand-muted font-medium mt-2">
+                    <NewsletterForm compact />
+                    <p className="text-sm text-brand-muted font-medium mt-6">
                        We're fine-tuning the AI artisan to ensure every portrait is a masterpiece. 
                        <br />Check back in a few hours!
                     </p>
@@ -340,16 +340,11 @@ export default function CreatePage() {
                   You've used your 2 free daily creations! Sign up for our Early Access pack to get unlimited generations and be the first to know about our official launch.
                 </p>
                 <GlassCard className="max-w-md mx-auto p-8">
-                   <h3 className="text-xl font-bold mb-4">Join the Pack</h3>
-                   <div className="flex flex-col gap-4">
-                     <input 
-                       type="email" 
-                       placeholder="your@email.com" 
-                       className="px-6 py-4 rounded-full border border-brand-text/10 focus:outline-none focus:ring-2 focus:ring-primary/50"
-                     />
-                     <Button>Sign Up & Unlock Updates</Button>
-                   </div>
-                   <p className="text-xs text-brand-muted mt-4">We promise not to bark too often. Just the important stuff.</p>
+                   <NewsletterForm 
+                     title="Join the Pack" 
+                     description="We promise not to bark too often. Just the important stuff." 
+                     compact 
+                   />
                 </GlassCard>
               </motion.div>
             )}

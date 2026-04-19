@@ -1,10 +1,15 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { Sparkles, Camera, Heart, Share2 } from "lucide-react";
+import { Sparkles, Camera, Heart, Share2, CheckCircle2 } from "lucide-react";
+
+import { NewsletterForm } from "@/components/NewsletterForm";
 
 export default function Home() {
   return (
@@ -161,6 +166,22 @@ export default function Home() {
               </GlassCard>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Newsletter / Join the Pack */}
+      <section className="py-24 px-6 relative overflow-hidden">
+        <div className="absolute inset-0 bg-brand-bg -z-20" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-full bg-primary/5 blur-[120px] -z-10" />
+        
+        <div className="container mx-auto max-w-4xl">
+          <GlassCard className="p-12 md:p-16 text-center shadow-2xl border-brand-text/5 relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent" />
+            <NewsletterForm 
+              title="Join the Pack"
+              description="Be the first to know when the Studio opens its doors. Get exclusive early access to new artistic styles and limited-edition physical goods."
+            />
+          </GlassCard>
         </div>
       </section>
 

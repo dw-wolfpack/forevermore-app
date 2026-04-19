@@ -50,6 +50,8 @@ const steps = [
   }
 ];
 
+import { NewsletterForm } from "@/components/NewsletterForm";
+
 export default function ShopPage() {
   return (
     <main className="min-h-screen flex flex-col pt-20 bg-brand-bg">
@@ -67,11 +69,8 @@ export default function ShopPage() {
               We're hand-picking the finest artisans to bring your pet's masterpieces into the physical world. 
               Join the waitlist for our private beta launch.
             </p>
-            <div className="flex flex-wrap items-center justify-center gap-4">
-              <Button size="lg">Join the Build Waitlist</Button>
-              <Link href="/gallery">
-                <Button variant="outline" size="lg">View Gallery Examples</Button>
-              </Link>
+            <div className="max-w-md mx-auto">
+              <NewsletterForm compact />
             </div>
           </div>
         </div>
