@@ -13,8 +13,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Furevermore | AI Pet Artistry",
-  description: "Transform your beloved pets into timeless masterpieces with our custom AI art generation.",
+  title: "Furevermore | Refined Custom Pet Portraits & Keepsakes",
+  description: "Turn your favorite pet photos into artful custom portraits. Furevermore creates refined keepsakes designed to be treasured for years.",
   metadataBase: new URL("https://furevermore.nextstepsbeyond.online"),
   icons: {
     icon: "/logo.png",

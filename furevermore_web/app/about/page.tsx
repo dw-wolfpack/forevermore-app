@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { Heart, Sparkles, ShieldCheck } from "lucide-react";
+import Link from "next/link";
 
 export default function AboutPage() {
   return (
@@ -13,7 +14,7 @@ export default function AboutPage() {
           <div className="max-w-3xl mx-auto text-center mb-20">
             <h1 className="text-5xl font-serif font-bold text-secondary mb-8">Our Mission</h1>
             <p className="text-xl text-brand-muted leading-relaxed">
-              At Furevermore, we believe every pet is a masterpiece. Our mission is to combine cutting-edge AI technology with a deep love for animals to create artistic tributes that capture the unique soul of your furry companions.
+              At Furevermore, we believe the animals we love deserve more than a folder of forgotten photos. We create refined custom pet artwork and keepsakes that honor the personality, beauty, and bond behind every image.
             </p>
           </div>
 
@@ -21,18 +22,18 @@ export default function AboutPage() {
             {[
               {
                 icon: <Heart className="w-8 h-8 text-primary" />,
-                title: "Crafted with Love",
-                desc: "Every stroke and every shade is designed to celebrate the bond you share with your pet."
+                title: "Crafted with Care",
+                desc: "Every portrait is designed to feel personal, polished, and worthy of display."
               },
               {
                 icon: <Sparkles className="w-8 h-8 text-primary" />,
-                title: "AI Excellence",
-                desc: "We use the world's most advanced image generation models, fine-tuned specifically for pet artistry."
+                title: "Thoughtfully Powered",
+                desc: "We use thoughtfully designed creative technology to transform beloved pet photos into artful, display-worthy pieces."
               },
               {
                 icon: <ShieldCheck className="w-8 h-8 text-primary" />,
-                title: "Quality First",
-                desc: "From digital delivery to physical merchandise, we never compromise on the premium experience."
+                title: "Quality Above All",
+                desc: "From digital portraits to future physical collections, we design every detail around a premium experience."
               }
             ].map((item, i) => (
               <GlassCard key={i} className="text-center p-10">
@@ -53,16 +54,16 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 gap-8">
             {[
               {
-                q: "How long does it take to generate the art?",
-                a: "Our AI typically crafts your masterpiece in 60-90 seconds. You'll see it appear in your results vault as soon as it's ready."
+                q: "How long does it take to create the art?",
+                a: "Once the studio opens, most portraits will be ready within minutes. You'll see several artistic variations to choose from."
               },
               {
                 q: "What kind of photos work best?",
-                a: "Clear, high-resolution photos with good lighting and eye contact are ideal. Avoid blurry photos or ones where the pet's face is obscured."
+                a: "Clear, well-lit photos where your pet's face is fully visible produce the most artful results."
               },
               {
                 q: "Can I order prints of my art?",
-                a: "Yes! Once your art is generated, you can head to the Shop to order canvasses, mugs, phone cases, and more featuring your pet."
+                a: "Physical products are coming soon. Join the waitlist to be the first to know when our first collection of canvases and keepsakes launches."
               }
             ].map((faq, i) => (
               <GlassCard key={i}>
@@ -77,13 +78,13 @@ export default function AboutPage() {
       <section className="py-24 bg-secondary text-white">
 
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-4xl font-serif font-bold mb-8">Ready to create your masterpiece?</h2>
+          <h2 className="text-4xl font-serif font-bold mb-8">Ready to see your pet reimagined?</h2>
           <p className="text-brand-bg/70 text-lg mb-12 max-w-2xl mx-auto">
-            Join thousands of pet parents who have already immortalized their pets in stunning artistic styles.
+            Join the waitlist and be the first to know when the studio opens its doors for custom portraits.
           </p>
-          <a href="/create" className="inline-block px-10 py-5 bg-primary text-white rounded-full text-lg font-bold hover:bg-primary/90 transition-all hover:scale-105 shadow-xl shadow-primary/20">
-            Start Your Portrait
-          </a>
+          <Link href="/create" className="inline-block px-10 py-5 bg-primary text-white rounded-full text-lg font-bold hover:bg-primary/90 transition-all hover:scale-105 shadow-xl shadow-primary/20">
+            Join the Waitlist
+          </Link>
         </div>
       </section>
 

@@ -73,7 +73,7 @@ export const Header = () => {
           <NavLink href="/shop" active={pathname === "/shop"}>Shop</NavLink>
           <NavLink href="/about" active={pathname === "/about"}>About</NavLink>
           <Link href="/create">
-            <Button size="sm">Start Creating</Button>
+            <Button size="sm">Join Waitlist</Button>
           </Link>
         </nav>
 
@@ -108,12 +108,12 @@ export const Header = () => {
               <div className="pt-6 border-t border-brand-text/5">
                 <Link href="/create" onClick={() => setIsMenuOpen(false)}>
                   <Button className="w-full justify-between group py-6">
-                    <span className="text-lg">Start Creating</span>
+                    <span className="text-lg">Create Art</span>
                     <Sparkles className="w-5 h-5 group-hover:scale-125 transition-transform" />
                   </Button>
                 </Link>
                 <p className="text-sm text-brand-muted text-center mt-8 italic">
-                  Museum quality for your best friend.
+                  Refined custom pet artwork and artful keepsakes.
                 </p>
               </div>
             </div>

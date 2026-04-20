@@ -7,22 +7,22 @@ import Link from "next/link";
 
 const galleryItems = [
   {
+    pet: "Prince",
     title: "Regal Renaissance",
-    pet: "Prince the Pug",
     image: "/pug.png",
-    style: "Oil Painting"
+    category: "Oil"
   },
   {
-    title: "Watercolor Dream",
-    pet: "Luna the Lab",
+    pet: "Luna",
+    title: "Watercolor Study",
     image: "/lab.png",
-    style: "Watercolor"
+    category: "Watercolor"
   },
   {
-    title: "Neon Nights",
-    pet: "Cooper the Corgi",
+    pet: "Cooper",
+    title: "Neon Portrait",
     image: "/corgi.png",
-    style: "Cyberpunk"
+    category: "Neon"
   }
 ];
 
@@ -34,8 +34,8 @@ export default function GalleryPage() {
       <section className="py-20 bg-brand-bg">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center mb-20">
-            <h1 className="text-5xl font-serif font-bold text-secondary mb-6">Community Gallery</h1>
-            <p className="text-xl text-brand-muted">Explore the masterpieces created by our wonderful community.</p>
+            <h1 className="text-5xl font-serif font-bold text-secondary mb-6">The Gallery</h1>
+            <p className="text-xl text-brand-muted">Explore a selection of custom portraits inspired by beloved pets and timeless artistic styles.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
@@ -48,25 +48,25 @@ export default function GalleryPage() {
                     fill 
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                    <div className="text-white">
-                      <p className="text-primary font-bold text-sm mb-1">{item.style}</p>
-                      <h3 className="text-xl font-serif font-bold">{item.title}</h3>
-                    </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-secondary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-start justify-end p-4">
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-white bg-primary/80 px-2 py-1 rounded backdrop-blur-sm">
+                      {item.category}
+                    </span>
                   </div>
                 </div>
-                <div className="px-4 py-2">
-                  <p className="font-bold text-secondary">{item.pet}</p>
-                  <p className="text-sm text-brand-muted">{item.style} Series</p>
+                <div className="px-4 py-4">
+                  <p className="font-serif font-bold text-secondary text-xl mb-1">{item.pet}</p>
+                  <p className="text-sm text-brand-muted font-medium">{item.title}</p>
                 </div>
               </GlassCard>
             ))}
           </div>
 
           <div className="mt-20 text-center">
-            <h2 className="text-3xl font-serif font-bold text-secondary mb-8">Want to see your pet here?</h2>
+            <h2 className="text-3xl font-serif font-bold text-secondary mb-4">Ready to see your pet reimagined?</h2>
+            <p className="text-brand-muted mb-8">Join the waitlist and be first to create your portrait.</p>
             <Link href="/create">
-              <Button size="lg">Create Your Own Portrait</Button>
+              <Button size="lg">Create Your Portrait</Button>
             </Link>
           </div>
         </div>

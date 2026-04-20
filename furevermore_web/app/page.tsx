@@ -23,37 +23,30 @@ export default function Home() {
             <div className="text-left">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold text-sm mb-6">
                 <Sparkles className="w-4 h-4" />
-                <span>AI-Powered Pet Masterpieces</span>
+                <span>Artful Keepsakes for Pet Lovers</span>
               </div>
               <h1 className="text-5xl lg:text-7xl font-serif font-bold text-secondary mb-8 leading-[1.1]">
                 Your Pet, <br />
                 <span className="text-primary italic">Evermore</span> Beautiful.
               </h1>
               <p className="text-xl text-brand-muted mb-10 max-w-lg leading-relaxed">
-                Transform your dog's precious moments into timeless keepsakes with the world's most sophisticated AI artistry.
+                Turn a favorite photo of your pet into custom artwork and keepsakes made to be treasured for years.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/create">
                   <Button size="lg" className="w-full sm:w-auto">
-                    Start Creating Now
+                    Create Your Portrait
                   </Button>
                 </Link>
                 <Link href="/gallery">
                   <Button variant="outline" size="lg" className="w-full sm:w-auto">
-                    View Gallery
+                    Explore the Gallery
                   </Button>
                 </Link>
               </div>
               <div className="mt-12 flex items-center gap-6 text-brand-muted/70">
-                <div className="flex -space-x-3">
-                  {[1, 2, 3, 4].map((i) => (
-                    <div key={i} className="w-10 h-10 rounded-full border-2 border-brand-bg bg-brand-chip overflow-hidden">
-                      <Image src={`https://i.pravatar.cc/100?img=${i+10}`} alt="User" width={40} height={40} />
-                    </div>
-                  ))}
-                </div>
-                <p className="text-sm font-medium">
-                  Trusted by <span className="text-secondary font-bold">25,000+</span> pet parents
+                <p className="text-sm font-medium italic border-l-2 border-primary/20 pl-4">
+                  Digital Portraits &bull; Physical Keepsakes Coming Soon
                 </p>
               </div>
             </div>
@@ -63,36 +56,26 @@ export default function Home() {
               <GlassCard className="relative p-2 overflow-hidden border-brand-text/5 rotate-2">
                 <Image 
                   src="/hero.png" 
-                  alt="AI Pet Art Showcase" 
+                  alt="Furevermore Portrait Showcase" 
                   width={800} 
                   height={800} 
                   className="rounded-2xl"
                   priority
                 />
               </GlassCard>
-              <div className="absolute -bottom-6 -left-6 bg-brand-bg p-4 rounded-2xl shadow-xl flex items-center gap-3 -rotate-3 animate-bounce-slow border border-brand-text/5 transition-colors">
-                <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center text-primary">
-                  <Heart className="w-6 h-6 fill-current" />
-                </div>
-                <div>
-                  <p className="text-xs text-brand-muted">Art Quality</p>
-                  <p className="text-sm font-bold text-secondary">100% Guaranteed</p>
-                </div>
-              </div>
+              {/* Empty space for balance */}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Social Proof Marks */}
-      <section className="py-12 bg-brand-chip/30 border-y border-brand-text/5">
+      {/* Brand Statement Section */}
+      <section className="py-24 bg-white/50 border-y border-brand-text/5">
         <div className="container mx-auto px-6">
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-20 opacity-40 grayscale">
-             {/* Mock brand logos would go here */}
-             <span className="text-2xl font-serif font-bold italic">Vogue Pets</span>
-             <span className="text-2xl font-serif font-bold italic">The Canine Times</span>
-             <span className="text-2xl font-serif font-bold italic">Modern Dog</span>
-             <span className="text-2xl font-serif font-bold italic">Paw Prints</span>
+          <div className="text-center">
+             <p className="text-2xl font-serif font-bold italic text-secondary leading-relaxed max-w-3xl mx-auto">
+               Portraits in styles from classic to contemporary, designed for pet lovers who want more than a snapshot.
+             </p>
           </div>
         </div>
       </section>
@@ -102,7 +85,7 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-secondary mb-4">How It Works</h2>
-            <p className="text-brand-muted max-w-2xl mx-auto">Three simple steps to create a masterpiece that will last for furevermore.</p>
+            <p className="text-brand-muted max-w-2xl mx-auto">Three simple steps to create a portrait worth keeping.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -110,17 +93,17 @@ export default function Home() {
               {
                 icon: <Camera className="w-8 h-8" />,
                 title: "1. Upload a Photo",
-                desc: "Choose a favorite photo of your pet from your phone or computer."
+                desc: "Choose a favorite image of your pet from your phone or computer."
               },
               {
                 icon: <Sparkles className="w-8 h-8" />,
                 title: "2. Choose a Style",
-                desc: "Pick from over 12 artistic styles like Renaissance, Neon, or Watercolor."
+                desc: "Select from a curated collection of artistic styles, from painterly classics to modern color."
               },
               {
                 icon: <Heart className="w-8 h-8" />,
-                title: "3. Treasure Forever",
-                desc: "Get your unique digital portraits or high-quality merchandise delivered."
+                title: "3. Treasure It Forever",
+                desc: "Receive your custom digital portrait, with premium physical keepsakes coming soon."
               }
             ].map((step, i) => (
               <div key={i} className="text-center group">
@@ -135,36 +118,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-24 bg-primary text-white overflow-hidden relative">
+      {/* Emotional Brand Section */}
+      <section className="py-32 bg-primary text-white overflow-hidden relative">
         <div className="absolute top-0 right-0 p-20 opacity-10 pointer-events-none">
-          <Share2 className="w-64 h-64" />
+          <Heart className="w-64 h-64" />
         </div>
         <div className="container mx-auto px-6 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-            <div>
-              <h2 className="text-4xl md:text-5xl font-serif font-bold mb-8">Loved by Pet Parents</h2>
-              <p className="text-brand-bg/70 text-lg mb-12">Join thousands of happy customers who have immortalized their furry friends through our AI-powered artistry.</p>
-              <Link href="/gallery">
-                <Button variant="outline" className="text-white border-brand-bg/20 hover:bg-brand-bg/10">Read More Stories</Button>
-              </Link>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-              <GlassCard className="bg-white/10 border-white/10" hoverEffect={false}>
-                <div className="flex gap-1 text-primary mb-4">
-                  {[1,2,3,4,5].map(i => <Star key={i} className="w-4 h-4 fill-current" />)}
-                </div>
-                <p className="italic text-brand-bg/90 mb-6">"Absolutely beautiful! My golden retriever looks like a Renaissance painting. I've ordered a canvas!"</p>
-                <p className="font-bold text-white">— Sarah, Golden Parent</p>
-              </GlassCard>
-              <GlassCard className="bg-white/10 border-white/10 mt-8" hoverEffect={false}>
-                <div className="flex gap-1 text-primary mb-4">
-                  {[1,2,3,4,5].map(i => <Star key={i} className="w-4 h-4 fill-current" />)}
-                </div>
-                <p className="italic text-brand-bg/90 mb-6 font-Inter">"The Neon Nights style is so cool. It's now the wallpaper on all my devices. Highly recommend!"</p>
-                <p className="font-bold text-white">— Michael, Husky Dadd</p>
-              </GlassCard>
-            </div>
+          <div className="max-w-3xl">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-8 leading-tight">
+              Made for the pets who become <br />
+              <span className="italic">part of everything.</span>
+            </h2>
+            <p className="text-brand-bg/80 text-xl mb-12 leading-relaxed">
+              From playful companions to lifelong best friends, Furevermore turns beloved photos into portraits worth keeping close.
+            </p>
+            <Link href="/create">
+              <Button variant="outline" className="text-white border-brand-bg/30 hover:bg-brand-bg/10 px-8">
+                Join the Waitlist
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -179,7 +151,7 @@ export default function Home() {
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent" />
             <NewsletterForm 
               title="Join the Pack"
-              description="Be the first to know when the Studio opens its doors. Get exclusive early access to new artistic styles and limited-edition physical goods."
+              description="Be the first to know when the studio opens. Get early access to new portrait styles, limited releases, and upcoming keepsake collections."
             />
           </GlassCard>
         </div>

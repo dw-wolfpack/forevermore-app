@@ -12,14 +12,14 @@ export const Footer = () => {
               <span className="text-2xl font-bold font-serif text-white">Furevermore</span>
             </Link>
             <p className="text-brand-bg/70 max-w-md mb-8">
-              Transforming your pet's precious moments into timeless keepsakes with premium AI artistry. Crafted with love for pet parents everywhere.
+              Furevermore turns beloved pet photos into refined custom artwork and keepsakes designed to be treasured for years.
             </p>
           </div>
 
           <div>
             <h4 className="font-serif text-lg font-bold mb-6 text-white text-brand-bg">Experience</h4>
             <ul className="space-y-4 text-brand-bg/70">
-              <li><Link href="/create" className="hover:text-white transition-colors">Start Creating</Link></li>
+              <li><Link href="/create" className="hover:text-white transition-colors">Join Waitlist</Link></li>
               <li><Link href="/gallery" className="hover:text-white transition-colors">Gallery</Link></li>
               <li><Link href="/shop" className="hover:text-white transition-colors">Art Shop</Link></li>
             </ul>

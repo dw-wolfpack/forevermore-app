@@ -156,23 +156,12 @@ export default function CreatePage() {
           {/* Progress Header */}
           <div className="flex items-center justify-between mb-12">
             <div>
-              <h1 className="text-3xl font-serif font-bold text-secondary">
-                {step === "UPLOAD" && "Step 1: Upload Photo"}
-                {step === "STYLE" && "Step 2: Choose Your Style"}
-                {(step === "LOADING" || step === "RESULT") && "Your Masterpiece"}
-                {step === "LIMIT" && "Daily Limit Reached"}
+              <h1 className="text-4xl font-serif font-bold text-secondary">
+                Create Your Portrait
               </h1>
-              <p className="text-brand-muted mt-2">
-                {step === "UPLOAD" && "Choose a clear photo of your beloved pet."}
-                {step === "STYLE" && "Pick an artistic style that reflects their soul."}
-                {step === "LOADING" && "Our AI is painting your pet's masterpiece..."}
-                {step === "RESULT" && "Behold! Your pet's timeless tribute."}
+              <p className="text-brand-muted mt-2 text-lg">
+                Join the waitlist for early access when the studio opens, and be ready to upload your favorite pet photo first.
               </p>
-            </div>
-            <div className="text-right">
-              <span className="text-sm font-bold text-primary bg-primary/10 px-4 py-2 rounded-full">
-                {usageCount}/{FREE_LIMIT} Free Creations Used
-              </span>
             </div>
           </div>
 
@@ -193,10 +182,10 @@ export default function CreatePage() {
                   
                   <div className="mb-8 opacity-40">
                     <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto text-primary mb-6">
-                      <Upload className="w-10 h-10" />
+                      <Sparkles className="w-10 h-10" />
                     </div>
-                    <h2 className="text-2xl font-serif font-bold mb-4">Choose Your Photo</h2>
-                    <p className="text-brand-muted mb-8 italic">High-resolution photos with clear eye contact work best.</p>
+                    <h2 className="text-2xl font-serif font-bold mb-4">Studio Opening Soon</h2>
+                    <p className="text-brand-muted mb-8 italic">Photo uploads will be enabled for waitlist members first.</p>
                   </div>
 
                   <input
@@ -220,10 +209,15 @@ export default function CreatePage() {
 
                   <div className="flex flex-col items-center gap-4">
                     <NewsletterForm compact />
-                    <p className="text-sm text-brand-muted font-medium mt-6">
-                       We're fine-tuning the AI artisan to ensure every portrait is a masterpiece. 
-                       <br />Check back in a few hours!
-                    </p>
+                    <div className="mt-8 text-center text-secondary">
+                      <h3 className="text-xl font-serif font-bold mb-3">Studio Opening Soon</h3>
+                      <p className="text-brand-muted leading-relaxed max-w-sm mb-6">
+                        We’re putting the finishing touches on the Furevermore portrait experience. For the best results, choose a clear, well-lit photo with your pet’s face fully visible.
+                      </p>
+                      <Button variant="ghost" className="text-primary font-bold cursor-default">
+                        Join the Waitlist
+                      </Button>
+                    </div>
                   </div>
                 </GlassCard>
               </motion.div>
